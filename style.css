@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Titillium+Web:wght@300;400&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+body{
+    background-color: #424242;
+    display: grid;
+    place-items: center;
+    grid-template-rows: repeat(5, 1fr);
+}
+div{
+    font-size: 1.5rem;
+    width: 50%;
+    margin-left: 2rem;
+}
+div img{
+    margin-top: -8rem;
+    padding-left: 2rem;
+    float: right;
+}
+.overview{
+    grid-row: 1;
+}
+.education{
+    grid-row: 2;
+}
+.experience{
+    grid-row: 3;
+}
+.skills{
+    grid-row: 4;
+}
+.certifications{
+    grid-row: 5;
+}  
+@media only screen and (max-width: 900px) {
+    div{
+        font-size: 1.25rem;
+        float: none;
+    }
+    div img{
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    div{
+        width: 75%;
+        margin: auto;
+    }
+    div img{
+        margin-top: 0rem;
+        float: none;
+    }
+}
